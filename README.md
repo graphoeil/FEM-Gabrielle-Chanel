@@ -1,5 +1,5 @@
 # Live preview URL
-http://www.graphoeilmultimedia.com/reactDev/gabrielleChanel/
+https://gabrielle-chanel.netlify.app/
 
 # Getting Started with Create React App
 
