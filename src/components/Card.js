@@ -8,7 +8,7 @@ import cartIcon from "../images/icon-cart.svg";
 const Card = ({ category, name, type, description, price, discountPrice }) => {
 
 	// Store
-	const { urlSmallImage, urlBigImage } = useSelector((store) => { return store.gabrielle });
+	const { smallImage, bigImage } = useSelector((store) => { return store.gabrielle });
 
 	// Return
 	return(
@@ -16,8 +16,8 @@ const Card = ({ category, name, type, description, price, discountPrice }) => {
 			
 			{/* Image */}
 			<picture>
-				<source srcSet={ urlBigImage } media="(min-width: 768px)" />
-				<img src={ urlSmallImage } alt={ name } />
+				<source srcSet={ `${ process.env.PUBLIC_URL }/images/${ bigImage }` } media="(min-width: 768px)" />
+				<img src={ `${ process.env.PUBLIC_URL }/images/${ smallImage }` } alt={ name } />
 			</picture>
 			{/* Image */}
 
